@@ -4,20 +4,21 @@
   box-sizing: border-box;
 }
 
-.card {
+.background {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-.card__container {
+
+.card {
   width: 300px;
   height: 500px;
   border-radius: 8px;
   background: rgba(19, 18, 18, 0.3);
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: start;
   flex-direction: column;
   text-align: center;
   padding: 20px;
@@ -28,8 +29,8 @@
   border-radius: 50%;
 }
 .card__text {
-  overflow: hidden;
-  text-overflow: ellipsis;
+  height: 95px;
+  overflow-y: hidden;
 }
 .card__title {
   margin-top: 8px;
