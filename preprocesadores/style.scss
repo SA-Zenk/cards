@@ -4,24 +4,25 @@
 	box-sizing: border-box;
 }
 
-.card {
+.background {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
+}
 
-	&__container {
-		width: 300px;
-		height: 500px;
-		border-radius: 8px;
-		background: rgba(19, 18, 18, 0.3);
-		display: flex;
-		align-items: center;
-		justify-content: space-around;
-		flex-direction: column;
-		text-align: center;
-		padding: 20px;
-	}
+.card {
+	width: 300px;
+	height: 500px;
+	border-radius: 8px;
+	background: rgba(19, 18, 18, 0.3);
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	flex-direction: column;
+	text-align: center;
+	padding: 20px;
+
 
 	&__image {
 		width: 100px;
@@ -29,9 +30,11 @@
 		border-radius: 50%;
 	}
 
+	&__info {}
+
 	&__text {
-		overflow: hidden;
-		text-overflow: ellipsis;
+		height: 95px;
+		overflow-y: hidden;
 	}
 
 	&__title {
