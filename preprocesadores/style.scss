@@ -9,19 +9,21 @@
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
+	margin: 5px;
 }
 
 .card {
 	width: 300px;
 	height: 500px;
 	border-radius: 8px;
-	background: rgba(19, 18, 18, 0.3);
+	background: rgba(255, 255, 255, 0.3);
 	display: flex;
 	align-items: center;
 	justify-content: start;
 	flex-direction: column;
 	text-align: center;
 	padding: 20px;
+	margin: 5px;
 
 
 	&__image {
@@ -30,26 +32,41 @@
 		border-radius: 50%;
 	}
 
-	&__info {}
+	&__origen {
+		height: 100x;
+		width: 70px;
+		margin-top: 8px;
+	}
 
 	&__text {
 		height: 95px;
 		overflow-y: hidden;
+		margin-top: 16px;
+		color: #757575;
 	}
 
 	&__title {
 		margin-top: 8px;
 		line-height: 1;
+		font-weight: normal;
 	}
 
 	&__subtitle {
 		margin-top: 4px;
 		font-size: 14px;
 		line-height: 1.1;
+		font-weight: normal;
 	}
 
-	&__icon {
-		width: 40px;
-		height: 40px;
+	&__link {
+		text-decoration: none;
+		padding: 6px;
+	}
+
+	&__icon{
+		width: 30px;
+		height: 30px;
+		padding: 6px;
+		margin-top: 16px;
 	}
 }
